@@ -1,4 +1,4 @@
-name: Release 3X-ui
+name: Release x-ui-peranull
 on:
   workflow_dispatch:
 jobs:
