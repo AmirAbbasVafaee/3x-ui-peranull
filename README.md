@@ -67,7 +67,7 @@ After you set ssl on settings
 - [diditra](https://github.com/diditra/)
 - [FranzKafkaYu](https://github.com/FranzKafkaYu)
 - [alireza0](https://github.com/alireza0/)
-- [alireza0](https://github.com/MHSanaei/3x-ui)
+- [MHSanaei](https://github.com/MHSanaei/3x-ui)
 
 
 ## Stargazers over time
