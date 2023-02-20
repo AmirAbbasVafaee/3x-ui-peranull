@@ -1,4 +1,4 @@
-# 3x-ui
+# -ui-Peranull
 > **Disclaimer: This project is only for personal learning and communication, please do not use it for illegal purposes, please do not use it in a production environment**
 
 xray panel supporting multi-protocol, **Multi-lang (English,Farsi,Chinese)**
@@ -67,6 +67,7 @@ After you set ssl on settings
 - [diditra](https://github.com/diditra/)
 - [FranzKafkaYu](https://github.com/FranzKafkaYu)
 - [alireza0](https://github.com/alireza0/)
+https://github.com/MHSanaei/3x-ui
 
 
 ## Stargazers over time
