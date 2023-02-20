@@ -6,7 +6,7 @@ xray panel supporting multi-protocol, **Multi-lang (English,Farsi,Chinese)**
 # Install & Upgrade
 
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/AmirAbbasVafaee/3x-ui-peranull/master/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/AmirAbbasVafaee/x-ui-Peranull/master/install.sh)
 ```
 
 # SSL
