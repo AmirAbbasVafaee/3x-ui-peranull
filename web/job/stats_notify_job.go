@@ -2,7 +2,11 @@ package job
 
 import (
 	"fmt"
+	"io/ioutil"
+	"log"
 	"net"
+	"net/http"
+	"net/url"
 	"os"
 	"time"
 	"x-ui/logger"
@@ -208,7 +212,18 @@ func (j *StatsNotifyJob) OnReceive() *StatsNotifyJob {
 			msg.Text = "ربات حالش خوبه، تو خوبی؟ :)"
 
 		case "usage":
-			msg.Text = j.getClientUsage(update.Message.CommandArguments())
+			FormData := url.Values{
+				"config": {update.Message.CommandArguments()},
+			}
+			resp, err := http.PostForm("http://127.0.0.1:5000/", FormData)
+			if err != nil {
+				log.Fatalf("An Error Occured %v", err)
+			}
+			defer resp.Body.Close()
+			//Read the response body
+			body, err := ioutil.ReadAll(resp.Body)
+			sb := string(body)
+			msg.Text = j.getClientUsage(sb)
 		default:
 			msg.Text = "این دستور شناخته شده نیست :(, /help"
 			msg.ReplyMarkup = numericKeyboard
